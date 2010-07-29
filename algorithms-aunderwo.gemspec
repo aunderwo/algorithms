@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
      "README.markdown",
      "Rakefile",
      "VERSION",
+     "algorithms-aunderwo.gemspec",
      "algorithms.gemspec",
      "benchmarks/deque.rb",
      "benchmarks/sorts.rb",
