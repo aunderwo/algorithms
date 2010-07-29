@@ -10,6 +10,7 @@ begin
     gemspec.homepage = "http://github.com/aunderwo/algorithms"
     gemspec.authors = ["Kanwei Li", "Anthony Underwood"]
   end
+  Jeweler::GemcutterTasks.new
 rescue LoadError
   puts "Jeweler not available. Install it with: gem install jeweler"
 end
