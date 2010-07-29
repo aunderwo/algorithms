@@ -1,14 +1,19 @@
 require 'rubygems'
-require 'echoe'
- 
-Echoe.new('algorithms') do |p|
-  p.author               = 'Kanwei Li'
-  p.email                = 'kanwei@gmail.com'
-  p.summary              = 'A library of algorithms and containers.'
-  p.url                  = 'http://rubyforge.org/projects/algorithms/'
-  p.version              = "0.2.0"
-  p.runtime_dependencies = []
+
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |gemspec|
+    gemspec.name = "algorithms-aunderwo"
+    gemspec.summary = "A library of algorithms and containers."
+    gemspec.description = "A modfication of the algorithms gem to include the latest String function"
+    gemspec.email = "algorithms@ants.otherinbox.co, kanwei@gmail.com"
+    gemspec.homepage = "http://github.com/aunderwo/algorithms"
+    gemspec.authors = ["Kanwei Li", "Anthony Underwood"]
+  end
+rescue LoadError
+  puts "Jeweler not available. Install it with: gem install jeweler"
 end
+
 
 task :push do
   sh "git push"    # Rubyforge
